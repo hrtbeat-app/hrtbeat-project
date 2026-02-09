@@ -1,1 +1,43 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Index</title>\n</head>\n<body>\n    <h1>Welcome to the HRTBeat Project</h1>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en"> 
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRTBeat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <div class="top-tag-container">
+            <!-- TODO: look into why using webp fixes the text in the logo showing vs using svg -->
+            <img src="assets/logo.webp" alt="" class="icon">
+            <span>Hrtbeat</span>
+        </div>
+
+        <div class="animation-wrapper">
+            <p class="hero-tagline">
+                The app that makes your <span class="bowlby-one-regular">Heart beat</span>
+            </p>
+
+            <div class="button-container">
+                <a href="https://github.com/ValveTextureFile/hrtbeat" class="hero-btn github-btn" target="_blank">
+                    <img src="assets/mark-github-24.svg" class="btn-icon" alt="GH">
+                    View GitHub Page
+                </a>
+                <!--for now just links to ipa-->
+                <a href="https://github.com/ValveTextureFile/hrtbeat/releases/download/alpha-ios%2Fmac/hrtbeat.ipa" class="hero-btn download-btn">
+                    <img src="assets/download-24.svg" class="btn-icon" alt="DL">
+                    Download Latest Release
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="header-placeholder"></div>
+
+    <!-- <main class="content-area"></main> -->
+
+    <script src="header.js"></script>
+</body>
+</html>
