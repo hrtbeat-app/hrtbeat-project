@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --bg-color: #121212;
@@ -9,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "SN Pro", 'Segoe UI', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -38,6 +39,7 @@ body {
 }
 
 .hero-tagline {
+    font-family: 'SN Pro', sans-serif;
     font-size: 2.5rem;
     white-space: nowrap;
     display: flex;
@@ -94,15 +96,39 @@ body {
     left: 0;
     width: 100%;
     z-index: 9999;
-    background: linear-gradient(145deg, #464a4e, #2e3134);
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
     color: #ffffff;
-    padding: 1.2rem 0;
+    padding: 0.8rem 0;
     text-align: center;
-    border-bottom: 1px solid #4a4e52;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 15px rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.banner-content h1 {
+    margin: 0;
+    font-family: "SN Pro", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #bdc3c7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner-content .btn-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
 }
 
 .top-banner.visible {
@@ -110,15 +136,13 @@ body {
     visibility: visible;
 }
 
-.banner-content h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
 .content-area {
-    min-height: 2000px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    min-height: auto;
+    padding-bottom: 100px;
     padding-top: 100px;
 }
 
@@ -185,6 +209,43 @@ body {
 @keyframes btn-fade {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.markdown-body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    color: #eee;
+    font-family: "SN Pro", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+}
+
+.markdown-body h1, 
+.markdown-body h2, 
+.markdown-body h3, 
+.markdown-body li {
+    font-family: "SN Pro", sans-serif;
+}
+
+.markdown-body h1, 
+.markdown-body h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.markdown-body h1 {
+    font-size: 2.5rem;
+}
+
+.markdown-body code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
 }
 
 /* mobile */

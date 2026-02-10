@@ -22,3 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(err => console.error('Error loading header:', err));
 });
+
+async function displayMarkdown() {
+    const target = document.getElementById('markdown-content');
+    
+    try {
+        const response = await fetch('main.md'); 
+        if (!response.ok) throw new Error('Failed to load markdown');
+        
+        const text = await response.text();
+        
+        target.innerHTML = marked.parse(text);
+    } catch (error) {
+        target.innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+    }
+}
+displayMarkdown();
