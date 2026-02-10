@@ -6,6 +6,7 @@
     <title>HRTBeat</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="downloader.js"></script>
 </head>
 <body>
 
@@ -27,7 +28,9 @@
                     View GitHub Page
                 </a>
                 <!--for now just links to ipa-->
-                <a href="https://github.com/ValveTextureFile/hrtbeat/releases/download/alpha-ios%2Fmac/hrtbeat.ipa" class="hero-btn download-btn">
+                <a href="https://github.com/ValveTextureFile/hrtbeat/releases/latest" 
+                    class="hero-btn download-btn" 
+                    id="download-link">
                     <img src="assets/download-24.svg" class="btn-icon" alt="DL">
                     Download Latest Release
                 </a>
