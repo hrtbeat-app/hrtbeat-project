@@ -1,3 +1,3 @@
-# Hrtbeat Website
+# hrtbeat
 
-Official SRC for the website found [here](https://valvetexturefile.github.io/hrtbeat-project/)
+Official SRC for the website found [Our Website](https://hrtbeat-app.github.io/hrtbeat-project/)
