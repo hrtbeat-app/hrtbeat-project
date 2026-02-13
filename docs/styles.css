@@ -159,7 +159,7 @@ body {
     opacity: 0.8;
 }
 
-.btn-icon, .icon {
+.btn-icon {
     width: 20px;
     height: 20px;
     object-fit: contain;
